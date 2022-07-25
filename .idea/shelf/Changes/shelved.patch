@@ -1,0 +1,636 @@
+Index: src/Lesson1/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1251
+===================================================================
+diff --git a/src/Lesson1/Main.java b/src/Lesson1/Main.java
+new file mode 100644
+--- /dev/null	(date 1658694892082)
++++ b/src/Lesson1/Main.java	(date 1658694892082)
+@@ -0,0 +1,9 @@
++package Lesson1;
++
++public class Main {
++    public static void main(String[] args) {
++        int a = 10000;
++        String str = "Всем";
++        System.out.println(str + " зарплату " + a + "$");
++    }
++}
+Index: Lessons.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lessons.iml b/Lessons.iml
+new file mode 100644
+--- /dev/null	(date 1658513562593)
++++ b/Lessons.iml	(date 1658513562593)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: src/Lesson2/First.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1251
+===================================================================
+diff --git a/src/Lesson2/First.java b/src/Lesson2/First.java
+new file mode 100644
+--- /dev/null	(date 1658515412736)
++++ b/src/Lesson2/First.java	(date 1658515412736)
+@@ -0,0 +1,22 @@
++package Lesson2;
++
++public class First {
++    private static byte a;
++    private static int b;
++    private static String str;
++    private static Integer max;
++
++    public static void main(String[] args) {
++        byte a = 7; //преобразование не требуется
++        int b = 5;
++        double d = a + b;
++        String str = "Всем привет!";
++        Integer.max(a = 7, b = 5);
++
++        System.out.println(a);
++        System.out.println(b);
++        System.out.println(str);
++        System.out.println(Integer.max(a = 7, b = 5));
++        System.out.println(d);
++    }
++}
+Index: src/Lesson2/Second.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1251
+===================================================================
+diff --git a/src/Lesson2/Second.java b/src/Lesson2/Second.java
+new file mode 100644
+--- /dev/null	(date 1658515412719)
++++ b/src/Lesson2/Second.java	(date 1658515412719)
+@@ -0,0 +1,177 @@
++package Lesson2;
++
++public class Second {
++    private static byte a;
++    private static short b;
++    private static int c;
++    private static long d;
++    private static float e;
++    private static double f;
++    private static char g;
++    private static boolean h;
++    private static String str;
++    private static Byte i;
++    private static Short j;
++    private static Integer k;
++    private static Long l;
++    private static Float m;
++    private static Double n;
++    private static Character o;
++    private static Boolean p;
++
++    public void setA(byte A) {
++        this.a = a;
++    }
++
++    public byte getA() {
++        return a;
++    }
++
++    public void setB(short b) {
++        this.b = b;
++    }
++
++    public short getB() {
++        return b;
++    }
++
++    public void setC(int c) {
++        this.c = c;
++    }
++
++    public int getC() {
++        return c;
++    }
++
++    public void setD(long d) {
++        this.d = d;
++    }
++
++    public long getD() {
++        return d;
++    }
++
++    public void setE(float e) {
++        this.e = e;
++    }
++
++    public float getE() {
++        return e;
++    }
++
++    public void setF(double f) {
++        this.f = f;
++    }
++
++    public double getF() {
++        return f;
++    }
++
++    public void setG(char c) {
++        this.g = g;
++    }
++
++    public char getG() {
++        return g;
++    }
++
++    public void setH(boolean h) {
++        this.h = h;
++    }
++
++    public boolean getH() {
++        return h;
++    }
++
++    public void setStr(String str) {
++        this.str = str;
++    }
++
++    public String getStr() {
++        return str;
++    }
++
++    public void setI(Byte i) {
++        this.i = i;
++    }
++
++    public Byte getI() {
++        return i;
++    }
++
++    public void setJ(Short j) {
++        this.j = j;
++    }
++
++    public Short getJ() {
++        return j;
++    }
++
++    public void setK(Integer k) {
++        this.k = k;
++    }
++
++    public Integer getK() {
++        return k;
++    }
++
++    public void setL(Long l) {
++        this.l = l;
++    }
++
++    public Long getL() {
++        return l;
++    }
++
++    public void setM(Float m) {
++        this.m = m;
++    }
++
++    public Float getM() {
++        return m;
++    }
++
++    public void setN(Double n) {
++        this.n = n;
++    }
++
++    public Double getN() {
++        return n;
++    }
++
++    public void setO(Character o) {
++        this.o = o;
++    }
++
++    public Character getO() {
++        return o;
++    }
++
++    public void setP(Boolean p) {
++        this.p = p;
++    }
++
++    public Boolean getP() {
++        return p;
++    }
++
++    public static void main(String[] args) {
++        System.out.println(a);
++        System.out.println(b);
++        System.out.println(c);
++        System.out.println(d);
++        System.out.println(e);
++        System.out.println(f);
++        System.out.println(g);
++        System.out.println(h);
++        System.out.println(str);
++        System.out.println(i);
++        System.out.println(j);
++        System.out.println(k);
++        System.out.println(l);
++        System.out.println(m);
++        System.out.println(n);
++        System.out.println(o);
++        System.out.println(p);
++    }
++}
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1658515296589)
++++ b/.idea/vcs.xml	(date 1658515296589)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1251
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1658518421339)
++++ b/.idea/.gitignore	(date 1658518421339)
+@@ -0,0 +1,117 @@
++# Created by https://www.toptal.com/developers/gitignore/api/intellij
++# Edit at https://www.toptal.com/developers/gitignore?templates=intellij
++
++### Intellij ###
++# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
++# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
++
++# User-specific stuff
++.idea/**/workspace.xml
++.idea/**/tasks.xml
++.idea/**/usage.statistics.xml
++.idea/**/dictionaries
++.idea/**/shelf
++
++# AWS User-specific
++.idea/**/aws.xml
++
++# Generated files
++.idea/**/contentModel.xml
++
++# Sensitive or high-churn files
++.idea/**/dataSources/
++.idea/**/dataSources.ids
++.idea/**/dataSources.local.xml
++.idea/**/sqlDataSources.xml
++.idea/**/dynamic.xml
++.idea/**/uiDesigner.xml
++.idea/**/dbnavigator.xml
++
++# Gradle
++.idea/**/gradle.xml
++.idea/**/libraries
++
++# Gradle and Maven with auto-import
++# When using Gradle or Maven with auto-import, you should exclude module files,
++# since they will be recreated, and may cause churn.  Uncomment if using
++# auto-import.
++# .idea/artifacts
++# .idea/compiler.xml
++# .idea/jarRepositories.xml
++# .idea/modules.xml
++# .idea/*.iml
++# .idea/modules
++# *.iml
++# *.ipr
++
++# CMake
++cmake-build-*/
++
++# Mongo Explorer plugin
++.idea/**/mongoSettings.xml
++
++# File-based project format
++*.iws
++
++# IntelliJ
++out/
++
++# mpeltonen/sbt-idea plugin
++.idea_modules/
++
++# JIRA plugin
++atlassian-ide-plugin.xml
++
++# Cursive Clojure plugin
++.idea/replstate.xml
++
++# SonarLint plugin
++.idea/sonarlint/
++
++# Crashlytics plugin (for Android Studio and IntelliJ)
++com_crashlytics_export_strings.xml
++crashlytics.properties
++crashlytics-build.properties
++fabric.properties
++
++# Editor-based Rest Client
++.idea/httpRequests
++
++# Android studio 3.1+ serialized cache file
++.idea/caches/build_file_checksums.ser
++
++### Intellij Patch ###
++# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
++
++# *.iml
++# modules.xml
++# .idea/misc.xml
++# *.ipr
++
++# Sonarlint plugin
++# https://plugins.jetbrains.com/plugin/7973-sonarlint
++.idea/**/sonarlint/
++
++# SonarQube Plugin
++# https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
++.idea/**/sonarIssues.xml
++
++# Markdown Navigator plugin
++# https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
++.idea/**/markdown-navigator.xml
++.idea/**/markdown-navigator-enh.xml
++.idea/**/markdown-navigator/
++
++# Cache file creation bug
++# See https://youtrack.jetbrains.com/issue/JBR-2257
++.idea/$CACHE_FILE$
++
++# CodeStream plugin
++# https://plugins.jetbrains.com/plugin/12206-codestream
++.idea/codestream.xml
++
++# Azure Toolkit for IntelliJ plugin
++# https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
++.idea/**/azureSettings.xml
++
++# End of https://www.toptal.com/developers/gitignore/api/intellij
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1658697013655)
++++ b/.idea/workspace.xml	(date 1658697013655)
+@@ -0,0 +1,151 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="449c3bab-9946-4daa-b166-7f3d5e679011" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Lessons.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/git status" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/Lessons/Lesson1/Main.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/Lessons/Lesson2/First.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/out/production/Lessons/Lesson2/Second.class" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Lesson1/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Lesson2/First.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Lesson2/Second.java" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="PUSH_TAGS">
++      <GitPushTagMode>
++        <option name="argument" value="--tags" />
++        <option name="title" value="All" />
++      </GitPushTagMode>
++    </option>
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="HighlightingSettingsPerFile">
++    <setting file="file://$PROJECT_DIR$/src/Lesson1/Main.java" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/Lesson2/First.java" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/src/Lesson2/Second.java" root0="FORCE_HIGHLIGHTING" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectId" id="2CJH2OsPiLLUYEvW1VLovKRb579" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "project.structure.last.edited": "Problems",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.2",
++    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
++  },
++  "keyToStringList": {
++    "ChangesTree.GroupingKeys": [
++      "directory"
++    ]
++  }
++}]]></component>
++  <component name="RunManager" selected="Application.Main">
++    <configuration name="First" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Lesson2.First" />
++      <module name="Lessons" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Lesson2.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Lesson1.Main" />
++      <module name="Lessons" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Lesson1.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Second" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Lesson2.Second" />
++      <module name="Lessons" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Lesson2.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.Main" />
++        <item itemvalue="Application.First" />
++        <item itemvalue="Application.Second" />
++      </list>
++    </recent_temporary>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="449c3bab-9946-4daa-b166-7f3d5e679011" name="Changes" comment="" />
++      <created>1658513561288</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1658513561288</updated>
++    </task>
++    <servers />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="master" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1658695912083)
++++ b/.idea/misc.xml	(date 1658695912083)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1658513562627)
++++ b/.idea/modules.xml	(date 1658513562627)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/Lessons.iml" filepath="$PROJECT_DIR$/Lessons.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: git status
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/git status b/git status
+new file mode 100644
+--- /dev/null	(date 1658694729991)
++++ b/git status	(date 1658694729991)
+@@ -0,0 +1,24 @@
++file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
++file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
++file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
++file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
++file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
++file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=openssl
++file:C:/Program Files/Git/etc/gitconfig	http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
++file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
++file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
++file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
++file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
++file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager-core
++file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
++file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
++file:C:/Users/Admin/.gitconfig	gui.recentrepo=D:/Проекты Intellij/HelloWorld
++file:C:/Users/Admin/.gitconfig	init.defaultbranch=main
++file:.git/config	core.repositoryformatversion=0
++file:.git/config	core.filemode=false
++file:.git/config	core.bare=false
++file:.git/config	core.logallrefupdates=true
++file:.git/config	core.symlinks=false
++file:.git/config	core.ignorecase=true
++file:.git/config	remote.origin.url=https://github.com/Evgenii-Boitman/Lessons.git
++file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
